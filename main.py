@@ -4,6 +4,8 @@ from colorama import Fore, Style
 
 
 class Games:
+    '''Основной класс'''
+
 
     def __init__(self, score_player1=0, score_player2=0):
         self.score_player1 = score_player1
@@ -16,6 +18,8 @@ class Games:
         self.score_player2 +=1
 
 class Knb(Games):
+    '''Игра камень ножницы бумага'''
+
 
     def get_choice(self, player1, player2) -> bool:
         '''
